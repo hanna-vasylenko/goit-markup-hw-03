@@ -1,0 +1,181 @@
+/* вторичный цвет текста #212121;
+акцентный цвет #2196f3;
+цвет основного текста #757575;
+цвет для шапки сайта: #FFFFFF;
+цвет фона для подвала и героя: #2F303A;
+фоновый белый:#E5E5E5 ;
+вторичный фоновый: #F5F4FA;
+ */
+
+:root {
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-background-color: #f5f4fa;
+}
+
+body {
+  --background-color: #e5e5e5;
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* LOGO */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo.dark {
+  color: var(--title-text-color);
+}
+
+.logo.bright {
+  color: #ffffff;
+}
+.accent {
+  color: var(--accent-color);
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Site Nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/* CONTACT LINK */
+.contact .link {
+  color: var(--primary-text-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* HERO section */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+/* BENEFITS */
+.benefits .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.section-title {
+  color: var(--title-text-color);
+}
+/* ABOUT TEAM */
+.section .team {
+  background-color: var(--secondary-background-color);
+}
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.work-list .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-list p {
+  font-size: 16px;
+  line-height: 1.872;
+  letter-spacing: 0.03em;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+}
+
+.footer p {
+  color: #ffffff;
+}
+.footer .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+address {
+  font-style: normal;
+}
