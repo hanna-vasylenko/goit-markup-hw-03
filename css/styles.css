@@ -18,7 +18,7 @@ body {
 /* common */
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -45,18 +45,19 @@ body {
 } */
 
 /* HEADER */
-.page-header-container {
-  display: flex;
-  align-items: baseline;
+.page-header {
   border: 1px solid #ececec;
   border-left: none;
   border-right: none;
   border-top: none;
 }
+
+.page-header-container {
+  display: flex;
+  align-items: baseline;
+}
 .header-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: baseline;
 }
 
@@ -64,7 +65,10 @@ body {
   display: flex;
   align-items: baseline;
 }
-
+.header-list-item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
 .header-list-item + .header-list-item {
   margin-left: 50px;
 }
@@ -104,8 +108,8 @@ body {
 .site-nav .link {
   color: var(--title-text-color);
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -136,9 +140,11 @@ body {
 }
 /* HERO section */
 
-.hero {
+.hero-section {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: #ffffff;
@@ -148,7 +154,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-top: 200px;
 }
 /* BUTTONS */
 .button {
@@ -166,7 +171,6 @@ body {
   background-color: var(--accent-color);
   padding: 10px 32px;
   min-width: 200px;
-  margin-bottom: 200px;
 }
 .portfolio-button {
   font-weight: 500;
@@ -185,7 +189,9 @@ body {
 }
 
 /* BENEFITS */
-
+.section.benefits {
+  padding-bottom: 0;
+}
 .benefits-list {
   display: flex;
   width: 270px;
@@ -218,15 +224,14 @@ body {
 }
 
 /* MISSION */
-.mision.section {
-}
+
 .mission-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .mission-list {
   display: flex;
@@ -313,6 +318,8 @@ body {
   color: #ffffff;
 }
 .footer .link {
+  line-height: 1.71;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   display: block;
   margin-top: 9px;
@@ -335,7 +342,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 56px;
+  margin-bottom: 56px;
 }
 
 .portfolio-item:not(:last-child) {
@@ -368,13 +375,8 @@ address {
   margin-bottom: 4px;
 }
 
-.work-list-text {
-}
 .work-list-subtitle p {
   font-size: 16px;
   line-height: 1.872;
   letter-spacing: 0.03em;
-}
-.mail {
-  padding-bottom: 60px;
 }
