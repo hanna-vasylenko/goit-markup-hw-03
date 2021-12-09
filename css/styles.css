@@ -3,6 +3,8 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --secondary-background-color: #f5f4fa;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -265,9 +267,8 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 30px;
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -287,6 +288,15 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.card {
+  box-shadow: var(--card-shadow);
+}
+.work-list .card-content {
+  padding: 24px;
+}
+.card-content {
+  padding: 30px;
 }
 
 /* FOOTER */
@@ -355,13 +365,10 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 10px;
   margin-bottom: 4px;
-  text-align: center;
 }
 
 .work-list-text {
-  text-align: center;
 }
 .work-list-subtitle p {
   font-size: 16px;
