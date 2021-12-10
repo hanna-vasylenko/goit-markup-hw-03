@@ -65,10 +65,6 @@ body {
   display: flex;
   align-items: baseline;
 }
-.header-list-item {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
 .header-list-item + .header-list-item {
   margin-left: 50px;
 }
@@ -153,7 +149,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto;
 }
 /* BUTTONS */
 .button {
@@ -295,10 +292,11 @@ body {
   letter-spacing: 0.03em;
 }
 .card {
-  box-shadow: var(--card-shadow);
+  border: 1px solid #eeeeee;
+  /* box-shadow: var(--card-shadow); */
 }
 .work-list .card-content {
-  padding: 24px;
+  padding: 20px 24px;
 }
 .card-content {
   padding: 30px;
